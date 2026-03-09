@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+</head>
+<body>
+    <h1 style="background-color: red;">Home page</h1>
+    <h2>Hello <%=user%></h2>
+
+   <% if (user=="subir") { %>
+  <h2><%= user.name %></h2>
+    <% }else{ %>
+
+    <h1>User not found</h1>
+
+    <%}%>
+    <a href="/about">About</a>
+</body>
+</html>

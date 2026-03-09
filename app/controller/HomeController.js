@@ -4,11 +4,16 @@
 class HomeController{
 
     index(req,res){
-        res.send('Home Page')
+       res.render('home',{
+           title:'Home Page',
+           user:"pritam"
+       })
     }
 
     about(req,res){
-        res.send('About Page')
+        res.render('about',{
+            title:'About Page'
+        })
     }
    
 }
